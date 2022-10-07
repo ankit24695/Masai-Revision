@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding-left: 5%;
+    padding-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding-bottom: 1%;
+    margin-bottom: 5%;
+    width: 95%;
+}
+
+#select{
+    padding: 5px 10px;
+    border: 0px;
+    font-size:medium;
+}
+
+#options{
+    margin-left:2%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:45%;
+}
+
+h4{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#login{
+width:20%;
+margin-left: 5%;
+display: flex;
+justify-content:space-evenly;
+}
+
+#refer{
+
+    padding:10px 15px;
+    border:0px;
+    font-size: medium;
+    background-color: white;
+    border-radius: 5px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+#refer>img{
+    width:20%;
+    margin-left: 1px;
+}
+
+
+
+#refer:hover{
+    background-color: aquamarine;
+}
+
+.nav-item{
+    text-align: center;
+}
+
+
+#log{
+    padding:15px 20px;
+    border:1px solid red;
+    border-radius: 5px;
+    color:red;
+    font-size: medium;
+    margin-left: 5%;
+}
+#log:hover{
+    background-color: lightpink;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height:3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:black;
+}
+
+@media(max-width:1072px){
+    .navbar{
+        width:100%;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #refer>img{
+        width:30%;
+        margin-left: 1px;
+    }
+
+
+    #options{
+        position:fixed;
+        left:-100%;
+        top:15%;
+        gap:0;
+        flex-direction: column;
+        background-color: white;
+        width:100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin-top: 5%;
+    }
+
+    #options.active{
+        left: 0;
+
+    }
+
+}
