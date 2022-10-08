@@ -1,0 +1,21 @@
+#container{
+    margin:auto;
+    text-align: center;
+}
+
+#show{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 2rem;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    gap:5px;
+}
+
+#show>div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    font-size: medium;
+    padding: auto;
+    padding-bottom: 1rem;
+    background-color: rgb(127, 182, 255);
+}
